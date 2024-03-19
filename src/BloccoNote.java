@@ -20,4 +20,12 @@ public class BloccoNote {
            System.out.println(nota.getTesto());
        }
    }
+   public Nota getNoteById (String id ){
+       for (Nota nota : note) {
+          if (id == nota.id){
+              return nota;
+          }
+       }
+       return null;
+   }
 }
