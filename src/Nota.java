@@ -1,7 +1,7 @@
 import java.util.UUID;
 public class Nota {
-    public String testo;
-    public String id;
+    private String testo;
+    private String id;
 
     public Nota( String testo) {
         this.testo = testo;
@@ -9,11 +9,24 @@ public class Nota {
         this.id = UUID.randomUUID().toString();
     }
 
+    public void setTesto(String testo) {
+        this.testo = testo;
+    }
+
     public String getTesto() {
         return testo;
+    }
+
+    @Override
+    public String toString() {
+        return "Nota{" +
+                "testo='" + testo + '\'' +
+                ", id='" + id + '\'' +
+                '}';
     }
 
     public String  getId() {
         return id;
     }
 }
+
