@@ -17,6 +17,5 @@ public class Main {
 
         BloccoNote blocconote2 = BloccoNote.getInstance();
         blocconote2.stampaNote();
-
         }
     }
