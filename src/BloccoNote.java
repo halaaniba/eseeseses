@@ -14,4 +14,10 @@ public class BloccoNote {
    public void aggiungiNota(Nota nota){
        note.add(nota);
    }
+
+   public void stampaNote(){
+       for (Nota nota : note) {
+           System.out.println(nota.getTesto());
+       }
+   }
 }
